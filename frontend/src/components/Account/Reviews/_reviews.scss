@@ -1,0 +1,91 @@
+.account .user-view__reviews {
+   padding: 0 6rem;
+
+   .review-card {
+      background-color: $color-white;
+      border-radius: 3px;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.1);
+      margin-bottom: 2rem;
+      padding: 3rem;
+
+      &__tour-wrapper {
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-start;
+         margin-bottom: 1rem;
+      }
+
+      &__date-wrapper {
+         margin-top: -0.3rem;
+         text-align: right;
+      }
+
+      &__date {
+         font-size: 1rem;
+      }
+
+      &__date-value {
+         font-weight: 700;
+      }
+
+      &__date-text {
+         font-weight: 300;
+      }
+
+      &__text {
+         font-size: 1.4rem;
+      }
+
+      &__edit-rating {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      &__rating {
+         margin-top: auto;
+         display: flex;
+      }
+
+      &__star {
+         height: 2rem;
+         width: 2rem;
+         margin-right: 1px;
+
+         &--active {
+            fill: $color-primary;
+         }
+
+         &--inactive {
+            fill: $color-grey-dark-1;
+         }
+      }
+
+      .form-review-edit {
+         .form__textarea {
+            font-size: 1.4rem;
+         }
+
+         .button-rating-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .form__group:first-child {
+               margin-right: auto;
+            }
+
+            .btn {
+               margin-left: 3rem;
+            }
+
+            &__loading {
+               max-width: 6rem;
+
+               display: flex;
+               align-items: center;
+            }
+         }
+      }
+   }
+}

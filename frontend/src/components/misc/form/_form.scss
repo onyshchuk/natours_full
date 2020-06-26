@@ -1,0 +1,118 @@
+.form {
+   &__input,
+   &__textarea {
+      display: block;
+      font-family: inherit;
+      font-size: 1.5rem;
+      color: inherit;
+      padding: 1.25rem 1.75rem;
+      border: none;
+      width: 100%;
+      background-color: $color-grey-light-2;
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s;
+      border-radius: 4px;
+      box-sizing: border-box;
+
+      &:focus {
+         outline: none;
+      }
+
+      &::-webkit-input-placeholder {
+         color: $color-grey-dark-1;
+      }
+
+      &:disabled {
+         background-color: $color-grey-light-3;
+      }
+
+      &--invalid,
+      &--invalid:focus {
+         border-bottom: 3px solid $color-secondary-light;
+      }
+
+      &--valid {
+         border-bottom: 3px solid $color-primary;
+      }
+   }
+
+   &__textarea {
+      resize: none;
+      overflow: hidden;
+   }
+
+   &__group:not(:last-child) {
+      margin-bottom: 2.5rem;
+
+      span {
+         margin-left: 1rem;
+      }
+   }
+
+   &__label {
+      display: inline-block;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+   }
+
+   &__error {
+      text-align: right;
+      max-height: 2.5rem;
+      margin: 0 1rem -2.5rem 0;
+      font-size: $default-font-size;
+      color: $color-secondary-light;
+      font-weight: 600;
+   }
+
+   &__image-upload {
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+   }
+
+   &__img {
+      height: 7.5rem;
+      width: 7.5rem;
+      border-radius: 50%;
+      margin-right: 2rem;
+   }
+
+   &__upload {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+   }
+
+   &__rating {
+      margin-bottom: 0 !important;
+
+      .form__rating-wrapper {
+         height: 3rem;
+
+         &:hover .star {
+            fill: $color-primary;
+            cursor: pointer;
+         }
+
+         .star {
+            height: 3rem;
+            width: 3rem;
+            margin-right: 1px;
+            fill: $color-primary;
+
+            &:hover ~ svg {
+               fill: $color-grey-dark-1;
+            }
+         }
+
+         .inactive {
+            fill: $color-grey-dark-1;
+         }
+      }
+   }
+}

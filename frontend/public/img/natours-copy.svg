@@ -1,0 +1,30 @@
+<svg id="layer1" data-name="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 150">
+<defs>
+   <style>
+        .cls-1 {
+            fill: none;
+            stroke:url(#grad-1);
+            stroke-width: 6;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            stroke-dasharray: 1350;
+            stroke-dashoffset: 0;
+            -webkit-animation: dash 4s linear forwards;
+            -o-animation: dash 4s linear forwards;
+            -moz-animation: dash 3s linear forwards;
+            animation: dash 4s ease-in-out infinite;
+        }
+
+        @-webkit-keyframes dash {
+            from { stroke-dashoffset: 2700; }
+            to { stroke-dashoffset: 0; }
+        }
+   </style>
+   <linearGradient id="grad-1" x1="0" y1="0" x2="300" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7ed56f"/>
+      <stop offset="1" stop-color="#2bb584"/>
+   </linearGradient>
+</defs>
+   <title>green logo</title>
+   <polyline class="cls-1" points="3,3 225,147 150,8 75,147 225,147 297,3 75,147 3,3"/>
+</svg>

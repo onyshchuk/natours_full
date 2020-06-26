@@ -1,0 +1,38 @@
+.not-found {
+   width: 100vw;
+   padding-top: 8rem;
+
+   &__message {
+      width: 35%;
+      margin: 15rem auto 0 auto;
+   }
+
+   &__primary-message {
+      text-align: center;
+      font-size: 25rem;
+      line-height: 1;
+      display: block;
+      background-image: linear-gradient(
+         to right,
+         $color-primary-light,
+         $color-primary-dark
+      );
+      background-clip: text;
+      color: transparent;
+      letter-spacing: 2px;
+   }
+
+   &__secondary-message {
+      font-size: 3rem;
+      display: block;
+      color: $color-primary-dark;
+      text-transform: uppercase;
+      text-align: center;
+   }
+
+   &__text-message {
+      margin-top: 5rem;
+      font-size: 2rem;
+      text-align: center;
+   }
+}

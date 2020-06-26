@@ -1,0 +1,18 @@
+.footer {
+   background-color: $color-grey-light-1;
+   padding: 6rem 4rem 3rem 4rem;
+   font-size: 1.4rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 300;
+
+   &__dark {
+      background-color: $color-grey-dark-4;
+      color: $color-white;
+   }
+
+   &__logo img {
+      height: 3rem;
+   }
+}

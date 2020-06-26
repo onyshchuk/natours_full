@@ -1,0 +1,13 @@
+<svg id="layer1" data-name="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 150">
+<defs>
+   <style>
+      .cls-1{fill:url(#grad-1);}
+   </style>
+   <linearGradient id="grad-1" x1="0" y1="0" x2="300" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0.38" stop-color="#7ed56f"/>
+      <stop offset="1" stop-color="#2bb584"/>
+   </linearGradient>
+</defs>
+   <title>green logo</title>
+   <path class="cls-1" d="M193 75 152 3 111 75 0 0 72 150H231L300 0ZM229 138 197 82 280 25ZM144 103 84 135 114 86ZM152 107 214 142H89ZM219 136 160 103 190 86ZM187 79 152 98 117 79 152 19ZM107 82 74 138 17 22"/>
+</svg>

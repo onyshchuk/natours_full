@@ -1,0 +1,68 @@
+.tour .section-description {
+   background-color: #fcfcfc;
+   margin-top: calc(0px - 9vw);
+
+   display: flex;
+
+   & > * {
+      padding: 0 8vw;
+      padding-top: 14vw;
+      padding-bottom: calc(1vw + 9vw);
+      flex: 0 0 50%;
+   }
+
+   .description-box .description__text {
+      font-size: 1.7rem;
+
+      &:not(:last-child) {
+         margin-bottom: 2rem;
+      }
+   }
+
+   .overview-box {
+      background-color: $color-grey-light-1;
+      display: flex;
+      justify-content: center;
+
+      &__group:not(:last-child) {
+         margin-bottom: 7rem;
+      }
+
+      &__detail {
+         font-size: 1.5rem;
+         display: flex;
+         align-items: center;
+
+         &:not(:last-child) {
+            margin-bottom: 2.25rem;
+         }
+
+         svg {
+            margin-right: 1.25rem;
+         }
+      }
+
+      &__icon {
+         height: 2.25rem;
+         width: 2.25rem;
+         fill: $color-primary;
+      }
+
+      &__label {
+         font-weight: 700;
+         margin-right: 2.25rem;
+         text-transform: uppercase;
+         font-size: 1.4rem;
+      }
+
+      &__text {
+         text-transform: capitalize;
+      }
+
+      &__img {
+         border-radius: 50%;
+         height: 3.5rem;
+         margin-right: 1.25rem;
+      }
+   }
+}

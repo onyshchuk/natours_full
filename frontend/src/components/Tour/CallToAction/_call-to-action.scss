@@ -1,0 +1,95 @@
+.tour .section-cta {
+   margin-top: calc(0px - 9vw);
+   padding: 3rem;
+   padding-bottom: 11rem;
+   padding-top: calc(15rem + 9vw);
+   background-color: $color-grey-light-1;
+
+   .cta {
+      position: relative;
+      max-width: 105rem;
+      margin: 0 auto;
+      overflow: hidden;
+      background-color: $color-white;
+      padding: 9rem 5rem 9rem 21rem;
+      border-radius: 2rem;
+      box-shadow: 0 3rem 8rem 0.5rem rgba($color-black, 0.15);
+
+      &__img {
+         height: 15rem;
+         width: 15rem;
+         position: absolute;
+         left: 0;
+         top: 50%;
+         border-radius: 50%;
+         box-shadow: 1rem 0.5rem 3rem rgba($color-black, 0.15);
+
+         &--logo {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(
+               to right bottom,
+               $color-primary-light,
+               $color-primary-dark
+            );
+            z-index: 10;
+            transform: translate(-35%, -50%);
+
+            img {
+               width: 100%;
+            }
+         }
+
+         &--1 {
+            transform: translate(-10%, -50%) scale(0.97);
+            z-index: 9;
+         }
+
+         &--2 {
+            transform: translate(15%, -50%) scale(0.94);
+            z-index: 8;
+         }
+      }
+
+      &__content {
+         display: grid;
+         grid-template-rows: auto auto;
+         grid-template-columns: 1fr auto;
+         grid-gap: 0.7rem;
+         grid-auto-flow: column;
+         align-items: center;
+      }
+
+      &__text {
+         font-size: 1.9rem;
+         font-weight: 300;
+      }
+
+      .btn {
+         grid-row: 1 / -1;
+      }
+
+      &__review {
+         margin: -5rem 3rem -5rem 0;
+
+         .form__group {
+            margin-bottom: 4rem;
+         }
+
+         .button-rating-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__loading {
+               max-width: 6rem;
+               margin: 0 3rem 0 auto;
+               display: flex;
+               align-items: center;
+            }
+         }
+      }
+   }
+}

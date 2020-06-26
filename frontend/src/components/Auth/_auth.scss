@@ -1,0 +1,29 @@
+.auth {
+   margin-top: 8rem;
+   padding: 8rem 6rem;
+   background-color: $color-grey-light-1;
+   flex: 1;
+   z-index: 5;
+}
+
+.auth-form {
+   margin: 0 auto;
+   max-width: 55rem;
+   background-color: $color-white;
+   box-shadow: 0 2.5rem 8rem 2rem rgba($color-black, 0.06);
+   padding: 5rem 7rem;
+   border-radius: 5px;
+}
+
+.auth-button-wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 3.5rem;
+
+   &__loading {
+      max-width: 6rem;
+      display: flex;
+      align-items: center;
+   }
+}
